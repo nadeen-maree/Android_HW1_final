@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CATvsRAT</string>
+
+    <string name="heart">❤</string>
+    <string name="default_count">00000</string>
+    <string name="start">Start</string>
+    <string name="todo">TODO</string>
+</resources>
