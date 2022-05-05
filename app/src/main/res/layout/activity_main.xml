@@ -8,36 +8,110 @@ android:layout_height="match_parent"
 android:background="#051d43"
 tools:context="com.CATvsRAT.MainActivity">
 
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="317dp"
+        android:layout_height="202dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/catandrat" />
+
+    <Button
+        android:id="@+id/HighScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="130dp"
+        android:height="40dp"
+        android:backgroundTint="#ea2958"
+        android:text="@string/high_scores"
+        android:textColor="#03AEB6"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="TextContrastCheck"
+        tools:targetApi="lollipop" />
+
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
         android:width="130dp"
         android:height="40dp"
         android:backgroundTint="#ea2958"
         android:text="@string/start"
         android:textColor="#03AEB6"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/HighScores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945"
+        app:layout_constraintVertical_bias="1.0"
         tools:targetApi="lollipop" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="341dp"
-        android:layout_height="367dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.299"
-        app:srcCompat="@drawable/catandrat" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/sensorsRB"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#03AEB6"
+            android:checked="true"
+            android:fontFamily="sans-serif-condensed"
+            android:minHeight="48dp"
+            android:text="@string/play_with_sensors"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#ea2958"
+            android:textSize="30sp"
+            android:typeface="normal"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/buttonsRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#03AEB6"
+            android:fontFamily="sans-serif-condensed"
+            android:minHeight="48dp"
+            android:text="@string/play_with_buttons"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#ea2958"
+            android:textSize="30sp"
+            tools:targetApi="lollipop" />
+
+    </RadioGroup>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 

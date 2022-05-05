@@ -110,9 +110,9 @@
                 android:id="@+id/btn"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:backgroundTint="#051d43"
                 android:contentDescription="@string/todo"
                 android:rotation="-90"
-                android:backgroundTint="#051d43"
                 tools:ignore="SpeakableTextPresentCheck"
                 tools:layout_editor_absoluteX="71dp"
                 tools:layout_editor_absoluteY="583dp" />

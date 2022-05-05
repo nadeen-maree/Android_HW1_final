@@ -3,6 +3,7 @@ package com.CATvsRAT;
 public class Cell {
     private boolean isCat;
     private boolean isRat;
+    private boolean isCheese;
     private String catRotation;
     private String ratRotation;
 
@@ -10,6 +11,7 @@ public class Cell {
     public Cell() {// build the cell.
         this.isCat = false;
         this.isRat = false;
+        this.isCheese = false;
         this.catRotation = "right";
         this.ratRotation = "right";
 
@@ -28,6 +30,12 @@ public class Cell {
     }
     public void setRat(boolean bool) {
         isRat = bool;
+    }
+    public boolean isCheese() {
+        return isCheese;
+    }
+    public void setCheese(boolean bool) {
+        isCheese = bool;
     }
     public String getCatRotation() { return catRotation; }
     public void setCatRotation(String catRotation) {

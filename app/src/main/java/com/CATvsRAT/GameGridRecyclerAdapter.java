@@ -55,6 +55,9 @@ public class GameGridRecyclerAdapter extends RecyclerView.Adapter<GameGridRecycl
         public void bind(final Cell cell) {
             itemView.setBackgroundColor(Color.parseColor("#F5F5DC"));
 
+            if(cell.isCheese()){
+                valueImageView.setImageResource(R.drawable.cheese);
+            }
             if(cell.isCat()){
                 valueImageView.setImageResource(R.drawable.cat);
                 switch(cell.getCatRotation()){
